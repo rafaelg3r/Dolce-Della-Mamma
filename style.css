@@ -21,18 +21,20 @@ header {
   height: 56px;
 }
 
-section {
+section.hero {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-content1 {
   background-color: blue;
+  height: 320px;
+  width: 406px;
+}
 
-  &.c1 {
-    height: 320px;
-    max-width: 406px;
-  }
-
-  &.c2 {
-    margin-top: 197px;
-    height: 181px;
-  }
+.hero-content2 {
+  background-color: blue;
+  height: 320px;
+  width: 406px;
 }
 
 @media screen and (max-width: 1182px) {
