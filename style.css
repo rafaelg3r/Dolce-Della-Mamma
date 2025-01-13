@@ -259,10 +259,8 @@ section.flavors {
         background-color: white;
         box-shadow: var(--default-shadow);
 
-        background-image: url(src/imagens/Flavor-card-background.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: right;
+        background: right / contain no-repeat
+          url(src/imagens/Flavor-card-background.png);
 
         .flavor-text {
           width: max-content;
@@ -271,21 +269,16 @@ section.flavors {
             color: var(--dark-blue);
           }
         }
-        /*.flavor-image {
-           img {
-            width: 22rem;
-            height: 22rem;
-            border-radius: 0 1rem 1rem 0;
-          } 
-        }*/
-      }
-      .flavors-upper-row, .flavor-lower-row {
-        display: flex;
-        gap: 2rem;
-        justify-content: space-between;
       }
     }
   }
+}
+
+section.about {
+  margin-top: -10rem;
+  height: 151rem;
+  background: center / contain no-repeat
+    url(src/imagens/background-about.png);
 }
 
 @media screen and (max-width: 2560px) {
