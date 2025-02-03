@@ -1,0 +1,87 @@
+section.flavors {
+  margin-top: 23rem;
+  .flavors-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    .packages-sizes {
+      display: flex;
+      gap: 5rem;
+      margin-bottom: 3rem;
+      .package {
+        border-radius: 1rem;
+        width: 56.4rem;
+        height: 20rem;
+        box-shadow: 0 0 1.8rem .5rem rgba(0 0 0 / 0.2);
+      }
+      .package-normal-size {
+        background: linear-gradient(
+          to right,
+          var(--red-light),
+          var(--red-dark)
+        );
+      }
+      .package-smaller-size {
+        background: linear-gradient(to left, var(--pink), var(--pink-light));
+      }
+    }
+
+    .flavor-normal-size {
+      display: grid;
+      grid-template-areas:
+        "a b c"
+        "d e f";
+      gap: 4rem;
+      width: 100%;
+      .flavor-type {
+        position: relative;
+
+        display: flex;
+        padding: 2rem;
+        border-radius: 1rem;
+        width: 36.6rem;
+        height: 22rem;
+        background-color: white;
+        box-shadow: var(--default-shadow), inset -.2rem -.2rem 0 rgba(0, 0, 0, 0.1);
+
+        background: bottom 0 right -90px / contain no-repeat;
+        transition: background-position ease-in-out .3s;
+        &:hover {
+          background-position: bottom 0 right -16px;
+        }
+        .flavor-text {
+          width: max-content;
+          h3 {
+            font-size: 2.8rem;
+            color: var(--dark-blue);
+          }
+        }
+      }
+
+      /* individual cards */
+      .t-bolacha {
+        background-image: url(../src/imagens/flavor-bolacha.png);
+        grid-area: a;
+      }
+      .t-morango {
+        grid-area: b;
+      }
+      .t-oreo {
+        grid-area: c;
+      }
+
+      .t-chocolate {
+        background-image: url(../src/imagens/flavor-chocolate.png);
+        grid-area: d;
+      }
+
+      .t-teste {
+        grid-area: e;
+      }
+      .t-teste2 {
+        grid-area: f;
+      }
+    }
+  }
+}

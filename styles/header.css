@@ -1,0 +1,51 @@
+
+header {
+  /* border: solid 1px green; */
+  max-height: 6.8rem;
+  padding-top: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    margin-left: -0.4rem;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 4rem;
+
+      li {
+        a {
+          text-transform: uppercase;
+          text-decoration: none;
+          color: white;
+          font-size: 1.6rem;
+          font-weight: 600;
+          font-family: var(--Normal-Text);
+          letter-spacing: 4.5px;
+        }
+      }
+    }
+
+    div.nav-options {
+      display: flex;
+      gap: 3rem;
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        border-radius: 50%;
+        width: 5.6rem;
+        height: 5.6rem;
+      }
+    }
+  }
+}

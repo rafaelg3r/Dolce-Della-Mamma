@@ -1,0 +1,46 @@
+
+section.menu {
+  position: relative;
+  .menu-semi-button {
+    font-size: 2.4rem;
+    font-weight: 600;
+    font-family: var(--Normal-Text);
+    letter-spacing: 0.6rem;
+    color: white;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: max-content;
+    padding: 1rem 5.8rem;
+    background-color: var(--dark-blue);
+    border-radius: 2.5rem;
+    z-index: 3;
+  }
+
+  .menu-content {
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+
+    display: flex;
+    gap: 14rem;
+    width: 100%;
+    height: 20rem;
+    background-color: white;
+    box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.25);
+
+    align-items: center;
+    justify-content: center;
+
+    .menu-type-selector {
+      align-items: center;
+      display: flex;
+      flex-flow: column;
+      img {
+        width: 18.2rem;
+      }
+    }
+  }
+}

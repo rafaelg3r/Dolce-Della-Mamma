@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+:root {
+  --red-dark: #73020c;
+  --red: #d90416;
+  --red-light: #ea192b;
+  --red-light-60: #ea192a99;
+  --pink: #d62945;
+  --pink-light: #ff9eae;
+  --dark-blue: #0c1726;
+  --bg-color: #ffe2c8;
+
+  --Tittle: "Tilt Warp";
+  --Normal-Text: "Barlow";
+
+  --default-shadow: 0.8rem 0.8rem 1.6rem rgba(0, 0, 0, 0.25);
+}
+
+body {
+  background-color: var(--bg-color);
+  font: 500 1.8rem / 1.25 var(--Normal-Text) ;
+}
+
+/* responsive method */
+.container-all {
+  /* border: solid 1px gold; */
+  align-self: center;
+  justify-self: center;
+  max-width: 118rem;
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+ font: 700 2.4rem / 1.25 var(--Tittle);
+}
+
+h1 {
+
+  font-weight: 400;
+}
+
+p {
+  font: 500 1.6rem / 1.25 var(--Normal-Text);
+}
+
+button {
+  font-family: var(--Normal-Text);
+  font-weight: 600;
+}
+
+
+
